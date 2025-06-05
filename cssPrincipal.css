@@ -79,7 +79,6 @@ input:focus, textarea:focus, select:focus {
   border-color: #0077cc;
 }
 
-/* ==== BOTONES ==== */
 button {
   background-color: #0077cc;
   color: white;
@@ -91,14 +90,12 @@ button:hover {
   background-color: #005fa3;
 }
 
-/* ==== CONTENEDOR ==== */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
 }
 
-/* ==== UTILIDADES ==== */
 .text-center {
   text-align: center;
 }
@@ -107,7 +104,6 @@ button:hover {
 .mt-2 { margin-top: 2em; }
 .mb-2 { margin-bottom: 2em; }
 
-/* ==== FOOTER ==== */
 footer {
   margin-top: 2em;
   padding: 1em;
