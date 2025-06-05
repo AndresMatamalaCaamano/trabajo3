@@ -1,0 +1,251 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfaf6;
+    color: #1e1e1e;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  justify-content: space-between;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center; 
+}
+
+
+.carousel-section {
+  margin-bottom: 60px;
+}
+
+.carousel {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+  background-color: #333;
+}
+
+header h1 {
+    color: #3e2723;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: #795548;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.site-header {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-bottom: 2px solid #d7ccc8;
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    border-radius: 60px;
+    left: 40px; /* Alineado a la izquierda */
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+    margin-left: 60px; /* Espacio para que el logo no lo tape */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #3e2723;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #5d4037;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #4e342e;
+    font-size: 1.8em;
+    border-bottom: 2px solid #d7ccc8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    margin: 15px auto;
+    max-width: 800px;
+}
+
+
+a {
+    color: #4e342e;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d84315;
+    text-decoration: underline;
+}
+
+iframe {
+    border: 4px solid #5d4037;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;    
+    display: block;
+    margin: 40px auto;
+}
+
+.wide-map iframe {
+    max-width: 1200px;
+    height: 600px;
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.site-footer {
+  width: 100vw; 
+  background-color: #3e2723;
+  color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+  color: #ffcc80;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header h2 {
+        font-size: 1.5em;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .section p, ul {
+        font-size: 1em;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}
