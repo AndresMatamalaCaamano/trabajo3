@@ -1,41 +1,73 @@
 /* General */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fdfaf6;
-    color: #1e1e1e;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-
-html, body {
-  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1b1b1b;
+  color: #f5f5f5;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-
-body {
-  justify-content: space-between;
+html, body {
+  height: 100%;
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
-    background-color: #ffffff;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    border-radius: 12px;
-    padding: 40px 30px;
-    text-align: center; 
+  width: 90%;
+  max-width: 1000px;
+  background-color: #2a1e17;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  margin: auto;
 }
 
+/* Header */
+.site-header {
+  background: linear-gradient(90deg, #3e2b1f, #5d4037);
+  padding: 20px 40px;
+  border-bottom: 2px solid #a1887f;
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 60px;
+  border: 2px solid #ffcc80;
+}
+
+.header-text {
+  flex: 1;
+  text-align: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.8em;
+  color: #ffcc80;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.header-text p {
+  margin: 5px 0 0;
+  font-size: 1.2em;
+  color: #d7ccc8;
+}
+
+/* Carousel */
 .carousel-section {
   margin-bottom: 60px;
 }
@@ -45,9 +77,9 @@ body {
   width: 300px;
   margin: 0 auto;
   overflow: hidden;
-  border: 2px solid #ccc;
+  border: 2px solid #795548;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #3d2f25;
 }
 
 .carousel-track {
@@ -72,7 +104,7 @@ button.prev, button.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(255,255,255,0.15);
   color: #fff;
   border: none;
   padding: 10px 14px;
@@ -85,130 +117,164 @@ button.prev { left: 10px; }
 button.next { right: 10px; }
 
 button:hover {
-  background-color: #333;
-}
-
-header h1 {
-    color: #3e2723;
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-
-header h2 {
-    color: #795548;
-    font-size: 2em;
-    margin-bottom: 30px;
-}
-
-.site-header {
-    background-color: #fff;
-    padding: 20px 40px;
-    border-bottom: 2px solid #d7ccc8;
-    margin-bottom: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    position: absolute;
-    border-radius: 60px;
-    left: 40px; /* Alineado a la izquierda */
-}
-
-.header-text {
-    flex: 1;
-    text-align: center;
-    margin-left: 60px; /* Espacio para que el logo no lo tape */
-}
-
-.header-text h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #3e2723;
-}
-
-.header-text p {
-    margin: 5px 0 0;
-    font-size: 1.1em;
-    color: #5d4037;
+  background-color: #ffcc80;
+  color: #000;
 }
 
 .section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .section h2 {
-    color: #4e342e;
-    font-size: 1.8em;
-    border-bottom: 2px solid #d7ccc8;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+  color: #ffe0b2;
+  font-size: 2em;
+  border-bottom: 2px solid #6d4c41;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px #000;
 }
 
 .section p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #333;
-    margin: 15px auto;
-    max-width: 800px;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f0eae4;
+  margin: 15px auto;
+  max-width: 800px;
 }
 
+/* Consoles */
+.consola-playstation {
+  background-color: #3949ab;
+  color: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.consola-xbox {
+  background-color: #43a047;
+  color: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.consola-nintendo {
+  background-color: #e53935;
+  color: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.titulo-principal {
+  font-size: 3em;
+  text-align: center;
+  color: #ffcc80;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.titulo-consola, .subtitulo {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #ffe0b2;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.logo-consola {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+  border: 2px solid #ffcc80;
+}
+
+.juego {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.imagen-juego {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.descripcion {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-top: 10px;
+  color: #f2f2f2;
+}
+
+.comida {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #6d4c41;
+  color: #fff8f0;
+}
+
+.precio {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffd54f;
+  margin: 10px 0;
+}
+
+.ingredientes, .servicio {
+  text-align: left;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.ingredientes li, .servicio li {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.bebidas {
+  background-color: #5d4037;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  color: #fff3e0;
+}
 
 a {
-    color: #4e342e;
-    font-weight: bold;
-    text-decoration: none;
+  color: #ffcc80;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #d84315;
-    text-decoration: underline;
+  color: #ffe0b2;
+  text-decoration: underline;
 }
 
 iframe {
-    border: 4px solid #5d4037;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 1200px;
-    height: 600px;    
-    display: block;
-    margin: 40px auto;
-}
-
-.wide-map iframe {
-    max-width: 1200px;
-    height: 600px;
-}
-
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 60px auto;
+  border: 4px solid #6d4c41;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  height: 600px;    
+  display: block;
+  margin: 40px auto;
 }
 
 .site-footer {
-  width: 100vw; 
-  background-color: #3e2723;
+  width: 100%; 
+  background: linear-gradient(90deg, #4e342e, #2b1d17);
   color: #ffffff;
   padding: 30px 20px;
-  margin-top: 60px;
+  margin-top: auto;
   text-align: center;
   box-sizing: border-box;
-  position: relative;
-  left: 0;
 }
 
 .footer-content {
@@ -228,136 +294,26 @@ iframe {
   color: #ffcc80;
 }
 
-/* Estilo por consola */
-.consola-playstation {
-  background-color: #001f3f;
-  color:white;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-
-.consola-xbox {
-  background-color: #107c10;
-  color:white;
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-
-.consola-nintendo {
-  background-color: #e60012;
-  color:white;  
-  padding: 30px;
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
-
-/* Títulos */
-.titulo-principal {
-  font-size: 3em;
-  text-align: center;
-  color: #3e2723;
-  margin-top: 20px;
-}
-
-.titulo-consola {
-  font-size: 2em;
-  margin: 20px 0;
-  color: inherit;
-}
-
-.subtitulo {
-  font-size: 1.5em;
-  margin: 15px 0;
-  color: inherit;
-}
-
-/* Logos */
-.logo-consola {
-  width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
-  border-radius: 8px;
-}
-
-/* Juegos */
-.juego {
-  margin-bottom: 30px;
-  text-align: center;
-
-}
-
-.imagen-juego {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.descripcion {
-  font-size: 1.1em;
-  line-height: 1.5;
-  margin-top: 10px;
-}
-
-/* Comidas */
-.comida {
-  margin-top: 30px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.precio {
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #ffeb3b;
-  margin: 10px 0;
-}
-
-.ingredientes, .servicio {
-  text-align: left;
-  margin: 10px auto;
-  max-width: 600px;
-}
-
-.ingredientes li, .servicio li {
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-/* Bebidas */
-.bebidas {
-  background-color: #ffe0b2;
-  padding: 20px;
-  border-radius: 12px;
-  margin-top: 40px;
-  color: #3e2723;
-}
-
-
-
-
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    header h2 {
-        font-size: 1.5em;
-    }
-
-    .section h2 {
-        font-size: 1.5em;
-    }
-
-    .section p, ul {
-        font-size: 1em;
-    }
-
-    iframe {
-        height: 300px;
-    }
+  .header-text h1 {
+    font-size: 2em;
+  }
+  .header-text p {
+    font-size: 1em;
+  }
+  .section h2 {
+    font-size: 1.5em;
+  }
+  .section p, ul {
+    font-size: 1em;
+  }
+  iframe {
+    height: 300px;
+  }
+  .carousel {
+    width: 90%;
+  }
+  .slide {
+    min-width: 100%;
+  }
 }
