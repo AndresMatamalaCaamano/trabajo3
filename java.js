@@ -20,3 +20,16 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     updateCarousel();
   });
 });
+
+
+const carrusel = document.querySelector('.carrusel');
+let angle = 0;
+const totalItems = document.querySelectorAll('.carruselitem').length;
+const rotateInterval = 3000;
+
+function rotateCarousel() {
+  angle += 360 / totalItems;
+  carrusel.style.transform = `rotateY(${angle}deg)`;
+}
+
+setInterval(rotateCarousel, rotateInterval);
