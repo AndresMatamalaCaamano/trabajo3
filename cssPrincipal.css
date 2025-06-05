@@ -61,7 +61,7 @@ table {
 
 th, td {
   padding: 0.75em;
-  border: 1px solid #ddd;
+  border: 1px solid white;
   text-align: left;
 }
 
@@ -70,7 +70,7 @@ input, textarea, select, button {
   font-size: 1rem;
   padding: 0.5em;
   margin-bottom: 1em;
-  border: 1px solid #ccc;
+  border: 1px solid white;
   border-radius: 4px;
 }
 
@@ -86,6 +86,7 @@ button {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 button:hover {
   background-color: #005fa3;
 }
@@ -99,6 +100,7 @@ button:hover {
 .text-center {
   text-align: center;
 }
+
 .mt-1 { margin-top: 1em; }
 .mb-1 { margin-bottom: 1em; }
 .mt-2 { margin-top: 2em; }
@@ -107,7 +109,8 @@ button:hover {
 footer {
   margin-top: 2em;
   padding: 1em;
-  background-color: #eee;
+  background-color: bisque;
   text-align: center;
   font-size: 0.9rem;
 }
+
