@@ -228,6 +228,118 @@ iframe {
   color: #ffcc80;
 }
 
+/* Estilo por consola */
+.consola-playstation {
+  background-color: #001f3f;
+  color:white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.consola-xbox {
+  background-color: #107c10;
+  color:white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.consola-nintendo {
+  background-color: #e60012;
+  color:white;  
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+/* Títulos */
+.titulo-principal {
+  font-size: 3em;
+  text-align: center;
+  color: #3e2723;
+  margin-top: 20px;
+}
+
+.titulo-consola {
+  font-size: 2em;
+  margin: 20px 0;
+  color: inherit;
+}
+
+.subtitulo {
+  font-size: 1.5em;
+  margin: 15px 0;
+  color: inherit;
+}
+
+/* Logos */
+.logo-consola {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
+
+/* Juegos */
+.juego {
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+
+.imagen-juego {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.descripcion {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Comidas */
+.comida {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.precio {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffeb3b;
+  margin: 10px 0;
+}
+
+.ingredientes, .servicio {
+  text-align: left;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.ingredientes li, .servicio li {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Bebidas */
+.bebidas {
+  background-color: #ffe0b2;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 40px;
+  color: #3e2723;
+}
+
+
+
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.2em;
