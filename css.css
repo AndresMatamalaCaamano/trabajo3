@@ -100,6 +100,48 @@ header h2 {
     margin-bottom: 30px;
 }
 
+.site-header {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-bottom: 2px solid #d7ccc8;
+    margin-bottom: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    position: absolute;
+    border-radius: 60px;
+    left: 40px; /* Alineado a la izquierda */
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+    margin-left: 60px; /* Espacio para que el logo no lo tape */
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #3e2723;
+}
+
+.header-text p {
+    margin: 5px 0 0;
+    font-size: 1.1em;
+    color: #5d4037;
+}
 
 .section {
     margin-bottom: 40px;
