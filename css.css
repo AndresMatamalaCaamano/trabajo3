@@ -11,6 +11,20 @@ body {
     min-height: 100vh;
 }
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+body {
+  justify-content: space-between;
+}
+
 .container {
     width: 90%;
     max-width: 1000px;
@@ -21,6 +35,58 @@ body {
     text-align: center; 
 }
 
+
+.carousel-section {
+  margin-bottom: 60px;
+}
+
+.carousel {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 300px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+button:hover {
+  background-color: #333;
+}
 
 header h1 {
     color: #3e2723;
@@ -67,17 +133,58 @@ a:hover {
     text-decoration: underline;
 }
 
-
 iframe {
     border: 4px solid #5d4037;
     border-radius: 10px;
     width: 100%;
-    max-width: 800px;
-    height: 400px;
+    max-width: 1200px;
+    height: 600px;    
     display: block;
-    margin: 30px auto;
+    margin: 40px auto;
 }
 
+.wide-map iframe {
+    max-width: 1200px;
+    height: 600px;
+}
+
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+}
+
+.site-footer {
+  width: 100vw; 
+  background-color: #3e2723;
+  color: #ffffff;
+  padding: 30px 20px;
+  margin-top: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  left: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+  color: #ffcc80;
+}
 
 @media (max-width: 768px) {
     header h1 {
