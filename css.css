@@ -27,17 +27,22 @@ html, body {
 
 /* Header */
 .site-header {
-  background: linear-gradient(90deg, #3e2b1f, #5d4037);
-  padding: 20px 40px;
-  border-bottom: 2px solid #a1887f;
+  position: fixed;
+
   width: 100%;
-  box-sizing: border-box;
+  z-index: 1000;
+  background: linear-gradient(90deg, #3e2b1f, #5d4037);
+  color: #fff;
+  padding: 20px 40px;
+  border-bottom: 4px solid #d7ccc8;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideDown 1s ease forwards;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
   gap: 20px;
 }
 
@@ -48,6 +53,11 @@ html, body {
   border-radius: 60px;
   border: 2px solid #ffcc80;
 }
+
+.logo:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
 
 .header-text {
   flex: 1;
@@ -122,6 +132,10 @@ button:hover {
 }
 
 .section {
+  
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
   margin-bottom: 40px;
 }
 
