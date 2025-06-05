@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Carrusel con Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Este es el CSS para ocultar los botones predeterminados y usar las imagenes que quieren como indicadores-->
+
+    <!--<style>   
+    .carousel-indicators button { 
+        background-color: transparent !important;
+        border: none !important;
+        width: auto !important;
+        height: auto !important;
+        text-indent: 0 !important;
+        overflow: visible !important;
+        opacity: 1 !important;
+    }
+
+    </style> -->
+
+</head>
+
+<body>
+
+<div id="Carrusel" class="carousel slide" data-bs-ride="carousel"> <!--Aqui inicia el Carrusel-->
+
+    <!-- Indicadores del carrusel, copien y peguen el boton y le cambian el data bs slide to por el numero que sigue, esto es para que el carrusel tenga unos indicadores como rectangulares abajo -->
+    <!--Estos indicadores son los predeterminados del Boostrap-->
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="2"></button>
+    </div>
+
+    <!--Estos indicadores son por si quieren cambiarle los iconos de los indicadores del carrusel, pero para esto se hace uso del css, por lo que no se podria usar, pero igualmente lo dejo como una opcion y con el css para ocultar los predeterminados de boostrap-->
+
+    <!--<div class="carousel-indicators"> 
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="0" class="active">
+            <img src="Iconos/Carrusel Central.png" width="30" height="30" alt="Imagen 1">
+        </button>
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="1">
+            <img src="Iconos/Carrusel Derecha.png" width="30" height="30" alt="Imagen 2">
+        </button>
+        <button type="button" data-bs-target="#Carrusel" data-bs-slide-to="2">
+            <img src="Iconos/Carrusel Izquierda.png" width="30" height="30" alt="Imagen 3">
+        </button>
+    </div>-->
+
+    <div class="carousel-inner"> <!--Desde aqui se ponen las imagenes, copien todo el div class Carousel-item y peguenlo debajo del que div del carrusel que termina, ej:-->
+        <div class="carousel-item active"> <!--Este carrusel "active" es donde empezara a mostrarse el carrusel, Aqui si ponen una imagen, se mostrara primero-->
+            <img src="Imagenes/wallpaperflare.com_wallpaper (1).jpg" class="d-block w-100" alt="Imagen 1">
+        </div>
+        <div class="carousel-item">
+            <img src="Imagenes/wallpaperflare.com_wallpaper (2).jpg" class="d-block w-100" alt="Imagen 2">
+        </div> <!--Aqui termina el carrusel de la imegen 2-->
+        <div class="carousel-item"> <!--Aqui empieza el carrusel de la imagen 3, por lo que deberian copiar todo este div y cambiarle la imagen y su alt-->
+            <img src="Imagenes/wallpaperflare.com_wallpaper (3).jpg" class="d-block w-100" alt="Imagen 3">
+        </div>
+    </div>
+
+    <!--Estos botones(flechas) que salen a los lados del Carrusel son los predeterminados de Boostrap-->
+    
+    <button class="carousel-control-prev" type="button" data-bs-target="#Carrusel" data-bs-slide="prev"> <!--Estos son los Botones para desplazarse por el Carrusel, recomiendo no tocarlos mucho-->
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#Carrusel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+
+    <!--Esta es otra opcion por si quieren cambiar el icono de las flechas que salen a los lados del Carrusel-->
+    <!--Si quieren usarla, solo eliminen los simbolos para abrir y cerrar los comentarios -->
+
+   <!--<button class="carousel-control-prev" type="button" data-bs-target="#Carrusel" data-bs-slide="prev">
+        <img src="Iconos/Flecha Izquierda.png" width="64" height="64" alt="Anterior">
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#Carrusel" data-bs-slide="next">
+        <img src="Iconos/Flecha Derecha.png" width="64" height="64" alt="Siguiente">
+    </button> -->
+
+</div> <!--Aqui termina todo el Carrusel-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
